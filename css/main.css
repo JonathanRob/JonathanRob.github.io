@@ -42,11 +42,12 @@ h2 {
 }
 h3, h4 {
     margin: 0;
-    padding-top: 15px;
+    line-height: 1em;
+    padding-top: 5px;
 }
-p {
-    font-size: 1em;
-    /*line-height: 1em;*/
+p, li {
+    /*font-size: 1em;*/
+    line-height: 1em;
     color: #333;
     margin: 0;
     padding-top: 5px;
@@ -55,22 +56,18 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10px;
+}
+br.big {
+    margin-top: 20px;
+}
+br.small {
+    margin-top: 5px;
+}
 
-/*ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-ul.posts li {
-    list-style: none;
-}*/
-.cv-body p {
-    padding-top: 3px;
-}
-.cv-body ol {
-    list-style-position: inside;
-    margin-left: 0;
-    padding: 0;
-}
 .cv-date-line {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -84,7 +81,8 @@ ul.posts li {
     grid-template-columns: 4% 96%;
 }
 .reference p {
-    padding-top: 10px;
+    padding-top: 12px;
+    line-height: 1.2em;
 }
 .hang-indent {
     margin-left: 2em; 
@@ -93,4 +91,5 @@ ul.posts li {
 p.cv-date {
     text-align: right;
 }
+
 
