@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -19,25 +20,77 @@ a {
 a:hover {
     text-decoration: underline;
 }
+a:active {
+    color: black;
+}
+a.pdf {
+    color: #4377cc;
+    font-size: 1.2em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 40px;
+}
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+h3, h4 {
+    margin: 0;
+    padding-top: 15px;
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1em;
+    /*line-height: 1em;*/
     color: #333;
+    margin: 0;
+    padding-top: 5px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
+/*ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
 ul.posts li {
     list-style: none;
+}*/
+.cv-body p {
+    padding-top: 3px;
 }
+.cv-body ol {
+    list-style-position: inside;
+    margin-left: 0;
+    padding: 0;
+}
+.cv-date-line {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.cv-date-line3 {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+.reference {
+    display: grid;
+    grid-template-columns: 4% 96%;
+}
+.reference p {
+    padding-top: 10px;
+}
+.hang-indent {
+    margin-left: 2em; 
+    text-indent: -2em;
+}
+p.cv-date {
+    text-align: right;
+}
+
