@@ -24,7 +24,7 @@ a:active {
     color: black;
 }
 a.pdf {
-    color: #4377cc;
+    color: #004080;
     font-size: 1.2em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 40px;
@@ -46,9 +46,8 @@ h3, h4 {
     padding-top: 5px;
 }
 p, li {
-    /*font-size: 1em;*/
     line-height: 1em;
-    color: #333;
+    color: #000000;
     margin: 0;
     padding-top: 5px;
 }
@@ -67,7 +66,14 @@ br.big {
 br.small {
     margin-top: 5px;
 }
-
+.cv h2 {
+    color: #0066cc;
+}
+.cv a {
+    margin: 0;
+    text-decoration: none;
+    color: #000000;
+}
 .cv-date-line {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -80,7 +86,7 @@ br.small {
     display: grid;
     grid-template-columns: 4% 96%;
 }
-.reference p {
+.reference p, a {
     padding-top: 12px;
     line-height: 1.2em;
 }
