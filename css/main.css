@@ -3,31 +3,63 @@ body {
     width: 70%;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-nav ul, footer ul {
+
+/*----------------navbar and footer----------------*/
+nav, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+nav .navbar {
+	display: flex;
 }
-a {
-    text-decoration: none;
-    color: #999;
+nav a {
+	width: 70px;
+	padding: 3px 0px;
+	font-size: 1em;
+	color: black;
+	text-align: center;
+	margin-right: 5px;
+	background: #bcd6ff;
+	text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+	background: black;
+	text-decoration: none;
+	color: white;
 }
-a:active {
-    color: black;
+a.current_page {
+	background: #003b9b;
+	color: white;
 }
+
+
+footer ul li {
+	display: inline;
+	margin-right: 20px;
+}
+footer a {
+	text-decoration: none;
+	color: #999;
+}
+footer a:hover {
+	text-decoration: none;
+	color: black;
+}
+footer a:active {
+	color: black;
+}
+
+/*--------------------------------------------------*/
+
 a.pdf {
     color: #0066cc;
     font-size: 1em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 40px;
+    text-decoration: none;
 }
 a.pdf:hover{
     color: black;

@@ -7,12 +7,13 @@
 		</head>
 		<body>
 			<nav>
-	    		<ul>
-	        		<li><a class='home' href="/">Home</a></li>
-		        	<li><a class='about' href="/about">About</a></li>
-	        		<li><a class='cv' href="/cv">CV</a></li>
-	    		</ul>
+	    		<div class='navbar'>
+	    			{% for item in site.data.pagelist.pages %}
+	    				<a href="{{ item.url }}" class="{% if item.url == page.url %}current_page{% endif %}">{{ item.title }}</a>
+					{% endfor %}
+	    		</div>
 			</nav>
+			<br>
 			<div class="container">
 			
 			{{ content }}
