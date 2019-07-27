@@ -5,5 +5,8 @@ pages:
   - title: About
     url: /about/
 
+  - title: Publications
+    url: /publications.html
+
   - title: CV
-    url: /cv/
+    url: /cv.html
