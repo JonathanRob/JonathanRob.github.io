@@ -3,7 +3,7 @@ pages:
     url: /
 
   - title: About
-    url: /about/
+    url: /about.html
 
   - title: Publications
     url: /publications.html
