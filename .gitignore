@@ -8,3 +8,5 @@ _site/
 # Affinity photo design files
 *.afdesign
 
+# Ignore some pdfs
+/papers/DontUpload/
