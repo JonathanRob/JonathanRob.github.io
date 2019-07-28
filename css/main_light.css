@@ -1,66 +1,83 @@
+
+/*---------------- specify theme colors ----------------*/
+
+:root {
+	--theme-color-0: #f5f5f5;  /*nearly white*/
+	--theme-color-1: #f7f7f2;  /*lightest color*/
+	--theme-color-2: #0582ca;
+	--theme-color-3: #083d77;
+	--theme-color-4: #222725;
+	--theme-color-5: #121113; /*darkest color*/
+	--theme-color-99: #333333;  /*nearly black*/
+}
+
+/*---------------- top-level formatting ----------------*/
+
 html {
-	background-color: lightgray;
+	background-color: lightgray /*var(--theme-color-1);*/
 }
 
 body {
-    margin: 30px auto;
-    margin-top: 0;
-    padding: 10px;
-    padding-top: 30px;
-    width: 70%;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 400;
-    color: #333333;
-    line-height: 1.2;
-    background-color: white;
+	margin: 37px auto;
+	width: 70%;
+	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font-weight: 400;
+	color: var(--theme-color-99);
+	line-height: 1.1;
+	background-color: var(--theme-color-0);
 }
+
+/*body.home_page {
+	background-image: url('/images/MetabolicAtlas_3Dnetwork.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}*/
 
 /*---------------- navbar and footer ----------------*/
-nav, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    /*padding: 0px;*/
-    list-style: none;
-    font-weight: bold;
-}
 
-nav .navbar {
-	top: 0;
-	right: 0;
-    left: 0;
-/*    margin-right: auto;
-    margin-left: auto;
-	width: 70%;*/
-	display: flex;
-	flex-wrap: wrap;
+nav ul {
+	list-style-type: none;
+	margin: 0;
 	padding: 0;
-	background: #333333;
+	overflow: hidden;
+	background-color: var(--theme-color-99);
 	position: fixed;
+	top: 0;
+	left: 15%;
+	right: 15%;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	display: block;
+	color: var(--theme-color-0);
+	text-align: center;
+	padding: 9px 15px;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+nav .navtext {
+	float: right;
+	color: var(--theme-color-0);
+	padding: 9px 15px;
+	font-size: 1.1em;
 }
 
-nav a {
-	padding: 8px 12px;
-    /*border-radius: 5px;*/  /*rounded corners*/
-	font-size: 1em;
-	color: #f5f5f5;
-	text-align: center;
-	/*margin-right: 10px;*/
-	/*background: #bcd6ff;*/
-	text-decoration: none;
-}
 nav a:hover {
-	background: black;
+	background: black; /*var(--theme-color-99);*/
 	text-decoration: none;
 	color: white;
 }
+
 a.current_page {
-	background: #307025;
-	color: #f5f5f5;
+	background: var(--theme-color-3);
+	color: var(--theme-color-0);
 }
 
 
 footer ul li {
 	display: inline;
-	margin-right: 20px;
 }
 footer a {
 	text-decoration: none;
@@ -76,31 +93,55 @@ footer a:active {
 
 /*----------------------- main page ---------------------------*/
 
+.padded-content {
+	padding: 20px;
+}
+
+.padded-content li, p {
+	line-height: 1.3;
+}
+
+h1 {
+	color: var(--theme-color-4);
+}
+
 a {
-    color: #003b9b;
-    text-decoration: none;
+	color: var(--theme-color-2);
+	text-decoration: none;
 }
-a:hover{
-    color: black;
-    text-decoration: none;
+a:hover {
+	color: var(--theme-color-5);
+	text-decoration: none;
 }
+
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	background-color: lightgray;
+	padding: 3px;
+	text-align: right;
+	/*border-top: 1px solid #d5d5d5;*/
+	font-size: .7em;
 }
+
 .spaced-list li {
-    margin: 20px 0
+	margin: 20px 0
 }
-br {
-    display: block; /* makes it have a width */
-    content: ""; /* clears default height */
-    margin-top: 10px;
+
+.img-text {
+	color: white;
+	font-size: 0.6em;
+	position: absolute;
+	bottom: 8px;
+	right: 8px
 }
+.img-text a {
+	color: var(--theme-color-2);
+}
+
 br.big {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 br.small {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 
