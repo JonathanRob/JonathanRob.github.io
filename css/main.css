@@ -3,11 +3,11 @@
 
 :root {
 	--theme-color-0: #f5f5f5;  /*nearly white*/
-	--theme-color-1: #f7f7f2;  /*lightest color*/
-	--theme-color-2: #0582ca;
-	--theme-color-3: #083d77;
-	--theme-color-4: #222725;
-	--theme-color-5: #121113; /*darkest color*/
+	--theme-color-1: #c2f9bb;  /* blue: #f7f7f2; */  /*lightest color*/
+	--theme-color-2: #6bbf59;  /* blue: #0582ca; */
+	--theme-color-3: #069e2d;  /* blue: #083d77; */
+	--theme-color-4: #1a5b12;  /* blue: #222725; */
+	--theme-color-5: #142812;  /* blue: #121113; */ /*darkest color*/
 	--theme-color-99: #333333;  /*nearly black*/
 }
 
@@ -26,12 +26,6 @@ body {
 	line-height: 1.1;
 	background-color: var(--theme-color-0);
 }
-
-/*body.home_page {
-	background-image: url('/images/MetabolicAtlas_3Dnetwork.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-}*/
 
 /*---------------- navbar and footer ----------------*/
 
@@ -143,5 +137,41 @@ br.big {
 br.small {
 	margin-top: 5px;
 }
+
+
+/*----------------------- research page ---------------------------*/
+
+.figure-panel-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.figure-panel-grid div {
+	background-color: lightgray; /*var(--theme-color-1);*/
+	width: 265px;
+	height: 230px;
+	display: block;
+	text-align: center;
+}
+
+.figure-panel-grid img {
+	max-height: 80%;
+	/*max-height: 200px;*/
+	/*max-height: 100%;*/
+	max-width: 95%;
+	margin-top: 8px;
+}
+
+.figure-panel-grid h3 {
+	margin-top: 0.3em;
+}
+
+
+
+
+
+
+
 
 
