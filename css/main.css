@@ -100,7 +100,7 @@ h1 {
 }
 
 a {
-	color: var(--theme-color-2);
+	color: var(--theme-color-3);
 	text-decoration: none;
 }
 a:hover {
