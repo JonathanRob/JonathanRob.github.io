@@ -18,10 +18,10 @@ html {
 }
 
 body {
-	margin: 37px auto;
+	margin: 39px auto;
 	width: 70%;
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-	font-weight: 400;
+	font-weight: 350;
 	color: var(--theme-color-99);
 	line-height: 1.1;
 	background-color: var(--theme-color-0);
@@ -35,7 +35,7 @@ nav ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: var(--theme-color-99);
-	position: fixed;
+	position: fixed; 
 	top: 0;
 	left: 15%;
 	right: 15%;
@@ -47,7 +47,7 @@ nav li a {
 	display: block;
 	color: var(--theme-color-0);
 	text-align: center;
-	padding: 9px 15px;
+	padding: 10px 15px;
 	text-decoration: none;
 	font-size: 1.1em;
 }
@@ -68,7 +68,6 @@ a.current_page {
 	background: var(--theme-color-3);
 	color: var(--theme-color-0);
 }
-
 
 footer ul li {
 	display: inline;
