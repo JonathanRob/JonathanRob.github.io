@@ -2,19 +2,44 @@
 /*---------------- specify theme colors ----------------*/
 
 :root {
-	--theme-color-0: #f5f5f5;  /*nearly white*/
-	--theme-color-1: #c2f9bb;  /* blue: #f7f7f2; */  /*lightest color*/
-	--theme-color-2: #6bbf59;  /* blue: #0582ca; */
-	--theme-color-3: #069e2d;  /* blue: #083d77; */
-	--theme-color-4: #1a5b12;  /* blue: #222725; */
-	--theme-color-5: #142812;  /* blue: #121113; */ /*darkest color*/
-	--theme-color-99: #333333;  /*nearly black*/
+
+	/*Dark theme 1: dark bg, light text, green links, green highlights*/
+	--theme-color-bg: #3b3b3b;  /*dark gray*/
+	--theme-color-0: #333333;   /*nearly black*/
+	--theme-color-1: #142812;   /*darkest color*/
+	--theme-color-2: #1a5b12;
+	--theme-color-3: #069e2d;
+	--theme-color-4: #6bbf59;
+	--theme-color-5: #c2f9bb;  /*lightest color*/
+	--theme-color-99: #f5f5f5;  /*nearly white*/
+
+
+	/*Light theme 1: light bg, black text, green links, green highlights*/
+	/*--theme-color-bg: lightgray;
+	/*--theme-color-0: #f5f5f5;   /*nearly white*/
+	/*--theme-color-1: #c2f9bb;   /*lightest color*/
+	/*--theme-color-2: #6bbf59;
+	/*--theme-color-3: #069e2d;
+	/*--theme-color-4: #1a5b12;
+	/*--theme-color-5: #142812;   /*darkest color*/
+	/*--theme-color-99: #333333;  /*nearly black*/
+
+
+	/*Light theme 1: light bg, black text, blue links, blue highlights*/
+	/*--theme-color-bg: lightgray;
+	/*--theme-color-0: #f5f5f5;   /*nearly white*/
+	/*--theme-color-1: #f7f7f2;   /*lightest color*/
+	/*--theme-color-2: #0582ca;
+	/*--theme-color-3: #083d77;
+	/*--theme-color-4: #222725;
+	/*--theme-color-5: #121113;   /*darkest color*/
+	/*--theme-color-99: #333333;  /*nearly black*/
 }
 
 /*---------------- top-level formatting ----------------*/
 
 html {
-	background-color: lightgray /*var(--theme-color-1);*/
+	background-color: var(--theme-color-bg);
 }
 
 body {
@@ -151,7 +176,7 @@ br.small {
 }
 
 .figure-panel-grid div {
-	background-color: lightgray; /*var(--theme-color-1);*/
+	background-color: var(--theme-color-bg);
 	width: 265px;
 	height: 230px;
 	display: block;
