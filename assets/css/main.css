@@ -4,42 +4,51 @@
 :root {
 
 	/*Dark theme 1: dark bg, light text, green links, green highlights*/
-	--theme-color-bg: #3b3b3b;  /*dark gray*/
-	--theme-color-0: #000000;   /*black*/
-	--theme-color-1: #333333;   /*nearly black*/
-	--theme-color-2: #142812;   /*darkest color*/
-	--theme-color-3: #1a5b12;
-	--theme-color-4: #069e2d;
-	--theme-color-5: #6bbf59;
-	--theme-color-6: #c2f9bb;   /*lightest color*/
-	--theme-color-99: #f5f5f5;  /*nearly white*/
-	--theme-color-100: #ffffff; /*white*/
+	--theme-color-bg:     #242424; /*darker gray*/
+	--theme-color-navbg:  #333333; /*dark gray*/
+	--theme-color-navtx:  #f5f5f5; /*nearly white*/
+	--theme-color-navhov: #000000; /*black*/
+	--theme-color-0:      #000000; /*black*/
+	--theme-color-1:      #151515; /*nearly black*/
+	--theme-color-2:      #142812; /*darkest color*/
+	--theme-color-3:      #1a5b12;
+	--theme-color-4:      #069e2d;
+	--theme-color-5:      #6bbf59;
+	--theme-color-6:      #c2f9bb; /*lightest color*/
+	--theme-color-99:     #f5f5f5; /*nearly white*/
+	--theme-color-100:    #ffffff; /*white*/
 
 
 	/*Light theme 1: light bg, black text, green links, green highlights*/
-	/*--theme-color-bg: lightgray;
-	/*--theme-color-0: #ffffff;   /*white*/
-	/*--theme-color-1: #f5f5f5;   /*nearly white*/
-	/*--theme-color-2: #c2f9bb;   /*lightest color*/
-	/*--theme-color-3: #6bbf59;
-	/*--theme-color-4: #069e2d;
-	/*--theme-color-5: #1a5b12;
-	/*--theme-color-6: #142812;   /*darkest color*/
-	/*--theme-color-99: #333333;  /*nearly black*/
-	/*--theme-color-100: #000000; /*black*/
+	/*--theme-color-bg:     lightgray;
+	/*--theme-color-navbg:  #333333; /*nearly black*/
+	/*--theme-color-navtx:  #f5f5f5; /*nearly white*/
+	/*--theme-color-navhov: #000000; /*black*/
+	/*--theme-color-0:      #ffffff; /*white*/
+	/*--theme-color-1:      #f5f5f5; /*nearly white*/
+	/*--theme-color-2:      #c2f9bb; /*lightest color*/
+	/*--theme-color-3:      #6bbf59;
+	/*--theme-color-4:      #069e2d;
+	/*--theme-color-5:      #1a5b12;
+	/*--theme-color-6:      #142812; /*darkest color*/
+	/*--theme-color-99:     #333333; /*nearly black*/
+	/*--theme-color-100:    #000000; /*black*/
 
 
 	/*Light theme 1: light bg, black text, blue links, blue highlights*/
-	/*--theme-color-bg: lightgray;
-	/*--theme-color-0: #ffffff;   /*white*/
-	/*--theme-color-1: #f5f5f5;   /*nearly white*/
-	/*--theme-color-2: #f7f7f2;   /*lightest color*/
-	/*--theme-color-3: #0582ca;
-	/*--theme-color-4: #083d77;
-	/*--theme-color-5: #222725;
-	/*--theme-color-6: #121113;   /*darkest color*/
-	/*--theme-color-99: #333333;  /*nearly black*/
-	/*--theme-color-100: #000000; /*black*/
+	/*--theme-color-bg:    lightgray;
+	/*--theme-color-navbg: #333333; /*nearly black*/
+	/*--theme-color-navtx:  #f5f5f5; /*nearly white*/
+	/*--theme-color-navhov: #000000; /*black*/
+	/*--theme-color-0:     #ffffff; /*white*/
+	/*--theme-color-1:     #f5f5f5; /*nearly white*/
+	/*--theme-color-2:     #f7f7f2; /*lightest color*/
+	/*--theme-color-3:     #0582ca;
+	/*--theme-color-4:     #083d77;
+	/*--theme-color-5:     #222725;
+	/*--theme-color-6:     #121113; /*darkest color*/
+	/*--theme-color-99:    #333333; /*nearly black*/
+	/*--theme-color-100:   #000000; /*black*/
 }
 
 /*---------------- top-level formatting ----------------*/
@@ -65,7 +74,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: var(--theme-color-99);
+	background-color: var(--theme-color-navbg);
 	position: fixed; 
 	top: 0;
 	left: 15%;
@@ -76,7 +85,7 @@ nav li {
 }
 nav li a {
 	display: block;
-	color: var(--theme-color-1);
+	color: var(--theme-color-navtx);
 	text-align: center;
 	padding: 10px 15px;
 	text-decoration: none;
@@ -84,15 +93,15 @@ nav li a {
 }
 nav .navtext {
 	float: right;
-	color: var(--theme-color-1);
-	padding: 9px 15px;
+	color: var(--theme-color-navtx);
+	padding: 10px 15px;
 	font-size: 1.1em;
 }
 
 nav a:hover {
-	background: var(--theme-color-100);
+	background: var(--theme-color-navhov);
 	text-decoration: none;
-	color: var(--theme-color-0);
+	color: var(--theme-color-navtx);
 }
 
 a.current_page {
