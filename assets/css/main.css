@@ -69,13 +69,13 @@ body {
 
 /* text selection color */
 ::-moz-selection { /* code for Firefox */
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 ::selection {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 /*---------------- navbar and footer ----------------*/
