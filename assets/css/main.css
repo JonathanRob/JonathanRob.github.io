@@ -67,6 +67,17 @@ body {
 	background-color: var(--theme-color-1);
 }
 
+/* text selection color */
+::-moz-selection { /* code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
 /*---------------- navbar and footer ----------------*/
 
 nav ul {
